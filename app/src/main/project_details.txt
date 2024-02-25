@@ -1,0 +1,13 @@
+=== MainActivity.kt ===
+=== Fragment Classes ===
+=== ViewModel Classes ===
+=== activity_main.xml ===
+=== Other Layout Files ===
+=== ic_add.xml or ic_add.png ===
+=== menu_main.xml ===
+=== strings.xml ===
+=== dimens.xml ===
+=== colors.xml ===
+=== styles.xml ===
+=== AndroidManifest.xml ===
+=== Gradle Build Files ===

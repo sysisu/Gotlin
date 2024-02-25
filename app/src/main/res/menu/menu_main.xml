@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.tava.MainActivity">
+
+    <!-- Create Profile Menu Item -->
+    <item
+        android:id="@+id/action_create_profile"
+        android:title="@string/action_create_profile"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_create_profile"
+        android:contentDescription="@string/action_create_profile_desc" />
+
+    <!-- View Profile Menu Item -->
+    <item
+        android:id="@+id/action_view_profile"
+        android:title="@string/action_view_profile"
+        android:orderInCategory="200"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_view_profile"
+        android:contentDescription="@string/action_view_profile_desc" />
+
+    <!-- Enable NFC Menu Item -->
+    <item
+        android:id="@+id/action_enable_nfc"
+        android:title="@string/action_enable_nfc"
+        android:orderInCategory="300"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_nfc"
+        android:contentDescription="@string/action_enable_nfc_desc" />
+
+    <!-- Settings Menu Item -->
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="400"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_settings"
+        android:contentDescription="@string/action_settings_desc" />
+</menu>

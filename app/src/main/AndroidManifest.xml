@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ExtraText">
+
+    <!-- NFC hardware feature declaration: Indicates the app uses NFC features and is only installable on devices with NFC support. -->
+    <uses-feature android:name="android.hardware.nfc" android:required="true" />
+
+    <!-- Permission to use NFC: Required to enable NFC data exchange functionalities within the app. -->
+    <uses-permission android:name="android.permission.NFC" />
+
+    <application
+        android:allowBackup="true"
+        tools:ignore="MissingApplicationIcon" />  <!-- Allows users to back up and restore application data. -->
+    android:dataExtractionRules="@xml/data_extraction_rules"  <!-- Specifies rules for what data can be extracted by the system. -->
+    android:fullBackupContent="@xml/backup_rules"  <!-- Specifies which data to backup and conditions for it. -->
+    android:icon="@mipmap/ic_launcher"  <!-- Application icon for launcher. -->
+    android:label="@string/app_name"  <!-- Application name as seen in the launcher. -->
+    android:roundIcon="@mipmap/ic_launcher_round"  <!-- Application icon for devices supporting round icons. -->
+    android:supportsRtl="true"  <!-- Enables right-to-left layout support. -->
+    android:theme="@style/Theme.TAVA"  <!-- Application theme. -->
+    tools:targetApi="31"> <!-- Targeted API level; indicates compatibility and features used. -->
+
+    <activity
+        android:name=".MainActivity"
+        android:exported="true"
+        tools:ignore="WrongManifestParent" />  <!-- Allows this activity to be accessible by other apps. Required for apps targeting API 31+. -->
+    android:label="@string/app_name"  <!-- Name of the activity as shown in the app launcher. -->
+    android:theme="@style/Theme.TAVA"> <!-- Theme for the activity. -->
+    <intent-filter>
+        <action android:name="android.intent.action.MAIN" />  <!-- Designates this activity as the entry point of the app. -->
+        <category android:name="android.intent.category.LAUNCHER" />  <!-- Indicates that the activity should be listed in the app launcher. -->
+    </intent-filter>
+
+    <!-- Intent-filter for handling NDEF NFC tags with a specific MIME type. This allows the app to respond to NFC tags containing NDEF messages intended for this app. -->
+    <intent-filter>
+        <action android:name="android.nfc.action.NDEF_DISCOVERED"/>  <!-- Filters for NDEF discovered action via NFC. -->
+        <category android:name="android.intent.category.DEFAULT"/>  <!-- Required for the activity to accept implicit intents. -->
+
+        <!-- Specifies the MIME type this activity can handle, ensuring the app responds only to NFC tags with this specific type. -->
+        <data android:mimeType="application/vnd.yourcompany.nfcprofileshare" />
+    </intent-filter>
+</manifest>
+

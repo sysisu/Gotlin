@@ -1,0 +1,131 @@
+.
+|____.gitignore
+|____.gradle
+| |____8.0
+| | |____checksums
+| | | |____checksums.lock
+| | | |____md5-checksums.bin
+| | | |____sha1-checksums.bin
+| | |____dependencies-accessors
+| | | |____dependencies-accessors.lock
+| | | |____gc.properties
+| | |____executionHistory
+| | | |____executionHistory.lock
+| | |____fileChanges
+| | | |____last-build.bin
+| | |____fileHashes
+| | | |____fileHashes.bin
+| | | |____fileHashes.lock
+| | |____gc.properties
+| | |____vcsMetadata
+| |____buildOutputCleanup
+| | |____buildOutputCleanup.lock
+| | |____cache.properties
+| | |____outputFiles.bin
+| |____kotlin
+| | |____errors
+| |____vcs-1
+| | |____gc.properties
+|____.idea
+| |____.gitignore
+| |____compiler.xml
+| |____gradle.xml
+| |____kotlinc.xml
+| |____misc.xml
+| |____navEditor.xml
+| |____workspace.xml
+|____app
+| |____.gitignore
+| |____build.gradle.kts
+| |____libs
+| |____proguard-rules.pro
+| |____src
+| | |____androidTest
+| | | |____java
+| | | | |____com
+| | | | | |____example
+| | | | | | |____tava
+| | | | | | | |____ExampleInstrumentedTest.kt
+| | |____main
+| | | |____AndroidManifest.xml
+| | | |____java
+| | | | |____com
+| | | | | |____example
+| | | | | | |____tava
+| | | | | | | |____CreateProfileFragment.kt
+| | | | | | | |____MainActivity.kt
+| | | | | | | |____SettingsFragment.kt
+| | | | | | | |____ViewProfileFragment.kt
+| | | |____project_details.txt
+| | | |____res
+| | | | |____drawable
+| | | | | |____ic_create_profile.png
+| | | | | |____ic_launcher_background.xml
+| | | | | |____ic_launcher_foreground.xml
+| | | | | |____ic_nfc.png
+| | | | | |____ic_settings.png
+| | | | | |____ic_view_profile.png
+| | | | |____layout
+| | | | | |____activity_main.xml
+| | | | | |____content_main.xml
+| | | | | |____fragment_create_profile.xml
+| | | | | |____fragment_first.xml
+| | | | | |____fragment_settings.xml
+| | | | | |____fragment_view_profile.xml
+| | | | |____menu
+| | | | | |____menu_main.xml
+| | | | |____mipmap-anydpi-v26
+| | | | | |____ic_launcher.xml
+| | | | | |____ic_launcher_round.xml
+| | | | |____mipmap-hdpi
+| | | | | |____ic_launcher.webp
+| | | | | |____ic_launcher_round.webp
+| | | | |____mipmap-mdpi
+| | | | | |____ic_launcher.webp
+| | | | | |____ic_launcher_round.webp
+| | | | |____mipmap-xhdpi
+| | | | | |____ic_launcher.webp
+| | | | | |____ic_launcher_round.webp
+| | | | |____mipmap-xxhdpi
+| | | | | |____ic_launcher.webp
+| | | | | |____ic_launcher_round.webp
+| | | | |____mipmap-xxxhdpi
+| | | | | |____ic_launcher.webp
+| | | | | |____ic_launcher_round.webp
+| | | | |____navigation
+| | | | | |____nav_graph.xml
+| | | | |____values
+| | | | | |____colors.xml
+| | | | | |____dimens.xml
+| | | | | |____strings.xml
+| | | | | |____themes.xml
+| | | | |____values-land
+| | | | | |____dimens.xml
+| | | | |____values-night
+| | | | | |____themes.xml
+| | | | |____values-v23
+| | | | | |____themes.xml
+| | | | |____values-w1240dp
+| | | | | |____dimens.xml
+| | | | |____values-w600dp
+| | | | | |____dimens.xml
+| | | | |____xml
+| | | | | |____backup_rules.xml
+| | | | | |____data_extraction_rules.xml
+| | |____test
+| | | |____java
+| | | | |____com
+| | | | | |____example
+| | | | | | |____tava
+| | | | | | | |____ExampleUnitTest.kt
+|____build.gradle.kts
+|____gradle
+| |____wrapper
+| | |____gradle-wrapper.jar
+| | |____gradle-wrapper.properties
+|____gradle.properties
+|____gradlew
+|____gradlew.bat
+|____local.properties
+|____project_structure.txt
+|____settings.gradle.kts

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/createProfileFragment">
+
+    <!-- Removed MainActivity as a navigational component.
+         MainActivity should host the NavHostFragment and not be part of the navigation graph itself. -->
+
+    <!-- CreateProfileFragment: For creating or editing a profile -->
+    <fragment
+        android:id="@+id/createProfileFragment"
+        android:name="com.example.tava.CreateProfileFragment"
+        android:label="@string/create_profile_fragment_label"
+        tools:layout="@layout/fragment_create_profile" />
+
+    <!-- ViewProfileFragment: For viewing the user's or others' profiles -->
+    <fragment
+        android:id="@+id/viewProfileFragment"
+        android:name="com.example.tava.ViewProfileFragment"
+        android:label="@string/view_profile_fragment_label"
+        tools:layout="@layout/fragment_view_profile" />
+
+    <!-- SettingsFragment: For adjusting app settings -->
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.tava.SettingsFragment"
+        android:label="@string/settings_fragment_label"
+        tools:layout="@layout/fragment_settings" />
+
+    <!-- Define global actions if needed for navigation that can be called from any fragment -->
+    <!-- Global actions removed as each fragment can navigate using direct actions or via NavController in code -->
+</navigation>
